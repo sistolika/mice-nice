@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <title>Mice-nice</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header container" id="header">
+            <img src="./img/logo.svg" height="100px" alt="Mice-nice logo" class="header__logo">
+
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li class="header__nav__item">
+                        <a href="#about" class="header__nav__link">О нас</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#catalog" class="header__nav__link">Каталог</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a href="#contacts" class="header__nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="cart__btn">
+                <img class="cart__btn-img" src="./img/shoppingcart_85988.svg" width="30px" alt="">
+                <p class="cart__btn-price">0</p>
+                <p class="rouble">₽</p>
+            </div>
+        </header>
+
+        <section class="content">
+            <div class="cart hide">
+                <div class="cart-body">
+                    <h1 class="cart-title">Ваш заказ</h1>
+                    <p data-cart-empty>Добавьте товары в корзину</p>
+
+                    <div class="cart-wrapper">
+                    </div>
+
+                    <div class="cart-total">
+                        <p data-cart-delivery class="hide">
+                            <h2 class="delivery__title">Доставка:</h2>
+                                <span class="delivery-cost">450 ₽</span><br>
+                                <span>Бесплатно при заказе от 3000 ₽</span>
+                        </p>
+                        <p>
+                            <h2>Итого:</h2>
+                            <span class="total-price">0</span>
+                            <span class="rouble">₽</span>
+                        </p>
+                    </div>
+
+                    <div id="order-form" class="cart-body hide">
+                        <h2 class="cart-title">Оформить заказ</h2>
+                        <form>
+                            <div class="order-form__input">
+                                <label for="name">Имя:</label>
+                                <input type="text" id="name" class="form-control" placeholder="Введите имя">
+                                <label for="lastName">Фамилия:</label>
+                                <input type="text" id="lastName" class="form-control" placeholder="Введите фамилию">
+                                <label for="phone">Телефон:</label>
+                                <input type="text" id="phone" class="form-control" placeholder="Введите номер телефона">
+                            </div>
+                            <button type="submit" class="order-form__button">Заказать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container banner">
+            <img class="banner__img" src="./img/banner.png" alt="">
+        </div>
+
+        <section id="about" class="aboutUs container">
+            <h1 class="aboutUs__title title">О нас</h1>
+            <div class="aboutUs__content">
+                    <p>Мастерская mice-mice была создана в 2012 году.</p>
+                    <br>
+                    <p>Все наши украшения от идеи до эскиза и последующей реализации проходят строкий контроль качества.
+                        <br></br>
+                    <p>Тщательно продумывается не только дизайн, но и расположение креплений - мы делаем все возможное,
+                        что
+                        бы наши украшения радовали вас как можно дольше.</p>
+                    <br>
+                    <p>В основе наших иделий только высококачественные материалы: хирургическая сталь, а также
+                        полимерная
+                        глина премиум-класса, немецкого производства "FIMO"</p>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <h1 class="advantsges__title title">
+                    Почему именно mice-nice?
+                </h1>
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <img class="item--img" src="./img/advant/pearl_earrings.png" height="200px" alt="">
+                        <h2 class="item__title">Ручная работы</h2>
+                        <p>Каждое изделие, произведенное в нашей мастерской - уникально!</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img class="item--img" src="./img/advant/pearl_white_bracelet.png" height="200px" alt="">
+                        <h2 class="item__title">Безопасные материалы</h2>
+                        <p>Мы используем только безопасные материалы: все крепеления на наших изделях -
+                            хирургическая сталь.
+                            В основе многих наших изделий лежит высококачественная полимерная глина немецкого
+                            производства
+                            FIMO.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img class="item--img" src="./img/advant/white_beads_bracelete.png" height="200px" alt="">
+                        <h2 class="item__title">Высокое качество</h2>
+                        <p>Срок службы работы наших изделий выше, чем у кокурентов,
+                            поскольку мы тщательно следим за качеством изделий на всех
+                            этапах производства.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="catalog" class="catalog container">
+            <h1 class="catalog__title">Наши товары</h1>
+            <div class="products">
+                <div class="products__container" id="products-container">
+                </div>
+            </div>
+        </section>
+
+
+        <div class="contacts__address">
+            <h1 class="title adress-titles">Мы находимcя по адресу</h1>
+            <div class="adress-content">
+                <p class="address">
+                    Санкт-Петербург<br>
+                    м.Приморская,<br>
+                    Проспект-КИМа дом 6,<br>
+                    3 этаж,<br>
+                    помещение 353
+                </p>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.8736221457084!2d30.24419381627706!3d59.95083088188065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469636d3dfbc8865%3A0xf0a9892f4087aa4c!2z0L_RgNC-0YHQvy4g0JrQmNCc0LAsIDYsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTkxNTU!5e0!3m2!1sru!2sru!4v1621896933123!5m2!1sru!2sru"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+
+        <div id="contacts" class="contacts-content">
+            <h1 class="title">Контакты</h1>
+            <div class="contacts">
+                <div class="contacts-mail">
+                    <h2>E-MAIL</h2>
+                    <a href="mailto:mice-mice@gmail.com">mice-nice@gmail.com</a>
+                </div>
+                <div class="contacts-phone">
+                    <h2>Телефон</h2>
+                    <a href="tel:+8 968-889-05-45" class="phone">+8 968-889-05-45</a>
+                </div>
+                <div class="contacts-timetable">
+                    <h2>Режим работы</h2>
+                    <ul class="contacts-timetable-list">
+                        <li>пн-пт с 9:00 до 18:00</li>
+                        <li>суббота - выходной</li>
+                        <li>воскресенье - выходной</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <article class="qa">
+            <div class="acor-container ">
+                <h1 class="acor-title title">Ответы на часто задаваемые вопросы</h1>
+                <input type="checkbox" name="chacor" id="chacor1" />
+                <label for="chacor1">Сколько дней уходит на изготовление?</label>
+                <div class="acor-body">
+                    <p>Мы не изготавливаем украшения поштучно, на производтство партии украшений уходит от 7 до 14 дней
+                    </p>
+                </div>
+
+                <input type="checkbox" name="chacor" id="chacor2" />
+                <label for="chacor2">Стоимость доставки в регионы</label>
+                <div class="acor-body">
+                    <p>
+                        Стоимость доставки фиксированная и составляет 450р, при заказе от 3000 доставка бесплатна</p>
+                </div>
+
+                <input type="checkbox" name="chacor" id="chacor3" />
+                <label for="chacor3">Можно ли забронировать украшение?</label>
+                <div class="acor-body">
+                    <p>Нет, в настоящий момент возможности бронирования украшений нет.</p>
+                </div>
+
+                <input type="checkbox" name="chacor" id="chacor4" />
+                <label for="chacor4">Можно ли приобрести ваши изделия оффлайн</label>
+                <div class="acor-body">
+                    <p>Да, наша мастерская находится по адресу: Санкт-Петербург м.Приморская Проспект-КИМа дом 6 3 этаж
+                        помещение 353 </p>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <div class="copyright">
+                <p>© Copyright 2022 Все права защищены</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
