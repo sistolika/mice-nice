@@ -1,0 +1,115 @@
+[
+	{
+		"id": 1,
+		"title": "Брошь \"Суккулент синий\"",
+		"info": "(Полимерная глина, сталь)",
+		"price": 1650,
+		"imgSrc": "https://i.ibb.co/3rd2dMG/succulent-blue-purple.png"
+	},
+	{
+		"id": 2,
+		"title": "Брошь \"Суккулент роза\"",
+		"info": "(Полимерная глина, сталь)",
+		"price": 1650,
+		"imgSrc": "https://i.ibb.co/jkckcpx/succulent-pink-pin.png"
+	},
+	{
+		"id": 3,
+		"imgSrc": "https://i.ibb.co/xXKbfpw/hedgehog-pin.png",
+		"title": "Брошь \"Ёжик\"",
+		"info": "(Полимерная глина, сталь)",
+		"price": 1600
+	  },
+	  {
+		"id": 4,
+		"imgSrc": "https://i.ibb.co/ScbJzZP/acorn-white-earrings.png",
+		"title": "Серьги \"Желудь белый\"",
+		"info": "(Стекло, хирургическая сталь)",
+		"price": 1500
+	  },
+	  {
+		"id": 5,
+		"imgSrc": "https://i.ibb.co/2ZP0B0c/bird-earrings.png",
+		"title": "Серьги \"Птицы\"",
+		"info": "(Стекло, хирургическая сталь)",
+		"price": 1450
+	  },
+	  {
+		"id": 6,
+		"imgSrc": "https://i.ibb.co/gMPPkYW/oliva-earrings.png",
+		"title": "Серьги \"Олива\"",
+		"info": "(Полимерная глина, сталь)",
+		"price": 1600
+	  },
+	  {
+		"id": 7,
+		"imgSrc": "https://i.ibb.co/Ws3DTPn/pearl-earrings.png",
+		"title": "Серьги \"Жемчуг круглые\"",
+		"info": "(Жемчуг, хиругическая сталь)",
+		"price": 1450
+	  },
+	  {
+		"id": 8,
+		"imgSrc": "https://i.ibb.co/5vg43zF/thistle-earrings.png",
+		"title": "Серьги \"Чертополох\"",
+		"info": "(Стекло, хирургическая сталь)",
+		"price": 1450
+	  },
+	  {
+		"id": 9,
+		"imgSrc": "https://i.ibb.co/HqmgZNN/long-pearl-earrings.png",
+		"title": "Серьги \"Жемчуг бензин\"",
+		"info": "(Жемчуг, хирургическая сталь)",
+		"price": 1500
+	  },
+	  {
+		"id": 10,
+		"imgSrc": "https://i.ibb.co/RNGDCdB/pearl-pendants.png",
+		"title": "Колье \"Жемчуг бензин\"",
+		"info": "(Жемчуг, хирургическая сталь)",
+		"price": 1500
+	  },
+	  {
+		"id": 11,
+		"imgSrc": "https://i.ibb.co/Prdf0m4/constellation-necklace-big.png",
+		"title": "Подвеска \"Созвездие\"",
+		"info": "(Полимерная глина, сталь)",
+		"price": 1550
+	  },
+	  {
+		"id": 12,
+		"imgSrc": "https://i.ibb.co/hF9tynv/marsmallow-necklace.png",
+		"title": "Подвеска \"Маршмеллоу\"",
+		"info": "(Полимерная глина, стекло, сталь)",
+		"price": 1550
+	  },
+	  {
+		"id": 13,
+		"imgSrc": "https://i.ibb.co/4pqyW14/pearl-bracelet.png",
+		"title": "Браслет \"Серый жемчуг\"",
+		"info": "(Жемчуг, сталь)",
+		"price": 1500
+	  },
+	  {
+		"id": 14,
+		"imgSrc": "https://i.ibb.co/CW7rkv7/pearl-white-bracelet.png",
+		"title": "Браслет \"Белый жемчуг\"",
+		"info": "(Жемчуг, сталь)",
+		"price": 1500
+	  },
+	  {
+		"id": 15,
+		"imgSrc": "https://i.ibb.co/vzwb62M/white-beads-bracelete.png",
+		"title": "Браслет \"бусины\"",
+		"info": "(Стекло, сталь)",
+		"price": 1400
+	  },
+	  {
+		"id": 16,
+		"imgSrc": "https://i.ibb.co/vc9rQ85/star-bracelet.png",
+		"title": "Браслет \"Созвездия\"",
+		"info": "(Стекло, сталь)",
+		"price": 1400
+	  }
+	]
+  
