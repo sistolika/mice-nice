@@ -9,16 +9,6 @@
   font-family: 'Montserrat-Light';
 }
 
-.button {
-  background-color: $base_green;
-  padding: 20px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: $green;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -40,6 +30,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  text-align: center;
   background-color: $white;
   max-width: 1400px;
   width: calc(100vw - 100px);
@@ -63,7 +54,7 @@
       text-transform: uppercase;
     }
     &__link:hover {
-      border-bottom: 1px solid var(--color_green);
+      border-bottom: 1px solid $green;
     }
   }
 }
@@ -80,6 +71,10 @@
   width: 100px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  @media screen and (max-width: 670px){
+      height: fit-content;
+      margin: auto;
+  }
   &-price {
     margin: auto;
   }
@@ -102,6 +97,7 @@
     padding-top: 20px;
     width: calc(100vw - 100px);
     max-width: 1440px;
+    padding-bottom: 150px;
   }
 
   &-wrapper {
@@ -113,6 +109,9 @@
 
     &__top {
       display: flex;
+      @media screen and (max-width: 670px) {
+        display: block;
+      }
     }
 
     &__desc {
@@ -125,12 +124,32 @@
       margin: auto;
       border-radius: 20px;
     }
+    .counter-wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+    .items__control {
+      padding: 20px;
+      border-top: 1px solid $green;
+      border-bottom: 1px solid $green;
+      cursor: pointer;
+    }
+    .items__current {
+      padding: 20px;
+      border-top: 1px solid $green;
+      border-bottom: 1px solid $green;
+    }
   }
 
   .order-form__input {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-gap: 40px;
+    @media screen and (max-width: 670px){
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
 
     input {
       width: 100%;
@@ -207,6 +226,8 @@
     .item__title {
       text-transform: uppercase;
       font-weight: 200;
+      margin-top: 5%;
+      margin-bottom: 5%;
     }
   }
 }
@@ -215,16 +236,27 @@
   &__title {
     text-transform: uppercase;
     font-weight: 200;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   .products__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
+    @media screen and (max-width: 810px){
+        grid-gap: 10px;
+    }
   }
   .product-img {
     width: 300px;
     border-radius: 30px;
+    @media screen and (max-width: 810px){
+        width: 250px;
+    }
+    @media screen and (max-width: 675px){
+        width: 300px;
+    }
   }
   .price__currency {
     font-weight: bold;
@@ -242,17 +274,20 @@
 
   .items__control {
     padding: 20px;
-    border-top: 1px solid var(--color_green);
-    border-bottom: 1px solid var(--color_green);
+    border-top: 1px solid $green;
+    border-bottom: 1px solid $green;
     cursor: pointer;
   }
+
   .items__current {
     padding: 20px;
-    border-top: 1px solid var(--color_green);
-    border-bottom: 1px solid var(--color_green);
+    border-top: 1px solid $green;
+    border-bottom: 1px solid $green;
   }
+
   &__items {
     margin: auto;
+
     .card {
       padding: 20px;
       margin: auto;
@@ -273,9 +308,14 @@
   .address-title {
     text-transform: uppercase;
     font-weight: 200;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   .address-content {
-    display: flex;
+    display: flex; 
+    @media screen and (max-width: 810px){
+        flex-wrap: wrap;
+    }
   }
   .address {
     line-height: 50px;
@@ -293,6 +333,7 @@
   .contacts {
     display: flex;
     justify-content: space-around;
+    padding: 20px;
     background-color: $base_green;
     border-right: 4px solid $dark_green;
     color: $dark_green;
@@ -310,7 +351,9 @@
 .qa {
   .acor__title {
     text-transform: uppercase;
-    margin: 50px auto 50px auto;
+    font-weight: 200;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   .acor-container {
     margin: 20px 0;
@@ -389,6 +432,104 @@
       text-transform: uppercase;
       color: $black;
       text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .catalog .products__container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .advantages__list {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    .advantages__item .item--img {
+      width: 400px;
+    }
+  }
+  .header {
+    width: calc(100vw - 80px);
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .wrapper {
+    .header {
+      width: calc(100vw - 100px);
+
+      &__logo {
+        width: 50px;
+        height: auto;
+      }
+      &__nav {
+        margin: auto;
+        &__list {
+          display: block;
+          text-align: center;
+        }
+        &__link {
+          margin: auto;
+        }
+      }
+    }
+
+    .catalog {
+      .products__container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .advantages__list {
+      grid-template-columns: 1fr;
+      grid-gap: 0;
+      margin: auto;
+      .advantages__item {
+        .item--img {
+          width: 200px;
+        }
+      }
+    }
+
+    .contacts__content {
+      .contacts {
+        display: block;
+        align-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .wrapper {
+    width: calc(100vw - 100px);
+    margin: auto;
+
+    .catalog {
+      .products__container {
+        grid-template-columns: 1fr;
+      }
+    }
+    .header {
+      width: calc(100vw - 100px);
+      height: 120px;
+      margin: auto;
+      &__logo {
+        width: 80px;
+        height: auto;
+      }
+      &__nav {
+        margin: auto;
+        &__list {
+          font-size: 12px;
+          padding: 0;
+          text-align: center;
+          margin: auto;
+        }
+        &__link {
+          padding: 0px;
+        }
+      }
     }
   }
 }
