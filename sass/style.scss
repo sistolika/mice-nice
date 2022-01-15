@@ -29,13 +29,21 @@
   padding-top: 102px;
 }
 
+.hide {
+    opacity: 1;
+    animation-name: a1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    display: none;
+  }
+  
 .header {
   display: flex;
   justify-content: space-between;
   background-color: $white;
   max-width: 1400px;
   width: calc(100vw - 100px);
-  
+
   &__nav {
     &__list {
       display: flex;
@@ -83,8 +91,8 @@
 .cart {
   background-color: $white;
   width: calc(100vw - 50px);
-  /*position: fixed;
-  z-index: 1;*/
+  position: fixed;
+  z-index: 1;
   height: 100%;
   margin: auto;
   overflow-y: scroll; /* прокрутка корзины по вертикали */
@@ -162,8 +170,63 @@
   }
 }
 
+.catalog {
+  &__title {
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+  .products__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  .product-img {
+    width: 300px;
+    border-radius: 30px;
+  }
+  .price__currency {
+    font-weight: bold;
+    margin: 20px;
+  }
 
+  .text-center {
+    text-align: center;
+  }
+  .counter-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
 
+  .items__control {
+    padding: 20px;
+    border-top: 1px solid var(--color_green);
+    border-bottom: 1px solid var(--color_green);
+    cursor: pointer;
+  }
+  .items__current {
+    padding: 20px;
+    border-top: 1px solid var(--color_green);
+    border-bottom: 1px solid var(--color_green);
+  }
+  &__items {
+    margin: auto;
+    .card {
+      padding: 20px;
+      margin: auto;
+    }
+  }
+  &__btn {
+    background-color: $base_green;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    margin: 1%;
+    border-radius: 20px;
+    width: 150px;
+  }
+}
 
 .contacts__address {
   .address-title {
@@ -192,9 +255,10 @@
     background-color: $base_green;
     border-right: 4px solid $dark_green;
     color: $dark_green;
-    &-mail a, &-phone a{
-        text-decoration: none;
-        color: $dark_green;
+    &-mail a,
+    &-phone a {
+      text-decoration: none;
+      color: $dark_green;
     }
   }
   .contacts-timetable-list {
@@ -287,4 +351,3 @@
     }
   }
 }
-

@@ -34,6 +34,17 @@
   padding-top: 102px;
 }
 
+.hide {
+  opacity: 1;
+  -webkit-animation-name: a1;
+          animation-name: a1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: none;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,8 +111,8 @@
 .cart {
   background-color: #ffffff;
   width: calc(100vw - 50px);
-  /*position: fixed;
-  z-index: 1;*/
+  position: fixed;
+  z-index: 1;
   height: 100%;
   margin: auto;
   overflow-y: scroll;
@@ -189,6 +200,77 @@
   font-weight: 200;
 }
 
+.catalog__title {
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.catalog .products__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.catalog .product-img {
+  width: 300px;
+  border-radius: 30px;
+}
+
+.catalog .price__currency {
+  font-weight: bold;
+  margin: 20px;
+}
+
+.catalog .text-center {
+  text-align: center;
+}
+
+.catalog .counter-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+}
+
+.catalog .items__control {
+  padding: 20px;
+  border-top: 1px solid var(--color_green);
+  border-bottom: 1px solid var(--color_green);
+  cursor: pointer;
+}
+
+.catalog .items__current {
+  padding: 20px;
+  border-top: 1px solid var(--color_green);
+  border-bottom: 1px solid var(--color_green);
+}
+
+.catalog__items {
+  margin: auto;
+}
+
+.catalog__items .card {
+  padding: 20px;
+  margin: auto;
+}
+
+.catalog__btn {
+  background-color: #F6F6F6;
+  padding: 20px;
+  cursor: pointer;
+  border: none;
+  margin: 1%;
+  border-radius: 20px;
+  width: 150px;
+}
+
 .contacts__address .address-title {
   text-transform: uppercase;
   font-weight: 200;
@@ -224,7 +306,8 @@
   color: #656759;
 }
 
-.contacts__content .contacts-mail a, .contacts__content .contacts-phone a {
+.contacts__content .contacts-mail a,
+.contacts__content .contacts-phone a {
   text-decoration: none;
   color: #656759;
 }
