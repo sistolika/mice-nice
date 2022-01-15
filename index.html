@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="./sass/normalize.css">
     <title>Mice-nice</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header container" id="header">
+        <header class="header" id="header">
             <img src="./img/logo.svg" height="100px" alt="Mice-nice logo" class="header__logo">
 
             <nav class="header__nav">
@@ -99,7 +99,7 @@
 
         <section class="advantages">
             <div class="container">
-                <h1 class="advantsges__title title">
+                <h1 class="advantages__title title">
                     Почему именно mice-nice?
                 </h1>
                 <ul class="advantages__list">
@@ -139,8 +139,8 @@
 
 
         <div class="contacts__address">
-            <h1 class="title adress-titles">Мы находимcя по адресу</h1>
-            <div class="adress-content">
+            <h1 class="title address-title">Мы находимcя по адресу</h1>
+            <div class="address-content">
                 <p class="address">
                     Санкт-Петербург<br>
                     м.Приморская,<br>
@@ -155,8 +155,8 @@
         </div>
 
 
-        <div id="contacts" class="contacts-content">
-            <h1 class="title">Контакты</h1>
+        <div id="contacts" class="contacts__content">
+            <h1 class="contacts__content-title">Контакты</h1>
             <div class="contacts">
                 <div class="contacts-mail">
                     <h2>E-MAIL</h2>
@@ -180,7 +180,7 @@
 
         <article class="qa">
             <div class="acor-container ">
-                <h1 class="acor-title title">Ответы на часто задаваемые вопросы</h1>
+                <h1 class="acor-title">Ответы на часто задаваемые вопросы</h1>
                 <input type="checkbox" name="chacor" id="chacor1" />
                 <label for="chacor1">Сколько дней уходит на изготовление?</label>
                 <div class="acor-body">
@@ -212,6 +212,11 @@
         <footer>
             <div class="copyright">
                 <p>© Copyright 2022 Все права защищены</p>
+                <div class="dev-by">
+                    <p>Разработано:
+                        <a class="dev-by__link" href="https://github.com/sistolika">sistolika</a>
+                    </p>  
+                </div>
             </div>
         </footer>
     </div>
