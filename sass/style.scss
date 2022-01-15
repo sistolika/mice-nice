@@ -32,9 +32,10 @@
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: var $white;
+  background-color: $white;
   max-width: 1400px;
   width: calc(100vw - 100px);
+  
   &__nav {
     &__list {
       display: flex;
@@ -161,6 +162,9 @@
   }
 }
 
+
+
+
 .contacts__address {
   .address-title {
     text-transform: uppercase;
@@ -283,3 +287,4 @@
     }
   }
 }
+
